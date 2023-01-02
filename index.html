@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- displays site properly based on user's device -->
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap" rel="stylesheet">
+
+  <title>Frontend Mentor | QR code component</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap');
+
+    :root {
+      /* color Pallet */
+      --white: hsl(0, 0%, 100%);
+      --Light-gray: hsl(212, 45%, 89%);
+      --Grayish-blue: hsl(220, 15%, 55%);
+      --Dark-blue: hsl(218, 44%, 22%);
+
+      /* Font */
+      --font: 'Outfit', sans-serif;
+
+      /* Sizes for MediaQuery's */
+      --desktop-size: 1440px;
+      --mobile-size: 375px;
+    }
+
+    html {
+      background-color: var(--Light-gray);
+      font-family: var(--font);
+      height: 100%;
+    }
+
+    body {
+      height: 100%;
+      width: 100%;
+      margin: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    h1 {
+      color: var(--Dark-blue);
+      text-align: center;
+      font-size: 22px;
+    }
+
+    p {
+      color: var(--Grayish-blue);
+      font-size: 15px;
+      margin: 0;
+      text-align: center;
+    }
+
+    .card-container {
+      background-color: var(--white);
+      margin: auto;
+      width: 305px;
+      padding: 25px 25px 50px;
+      border-radius: 20px;
+    }
+
+    .card-container img {
+      width: 100%;
+      height: auto;
+      border-radius: 20px;
+    }
+
+    @media (max-width: 375px) {
+      .card-container {
+        margin: auto 20px;
+        height: auto;
+      }
+    }
+    footer {
+      position: absolute;
+      bottom: 0;
+      width: 100%;
+      text-align: center;
+      padding: 20px 0;
+      
+    }
+    footer a {
+      text-decoration: none;
+      color: var(--Grayish-blue);
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="card-container">
+    <img src="./images/image-qr-code.png" alt="qr-code">
+    <h1>Improve your front-end skills by building projects</h1>
+
+    <p>Scan the QR code to visit Frontend Mentor and take your coding skills to the next level</p>
+
+    
+  </div>
+  <footer>
+    <div>
+      <p>Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.</p>
+      <p>Coded by <a href="#">Aryan Choudhary</a>.</p>
+    </div>
+  </footer>
+</body>
+
+</html>
